@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Functions whose names start with use are called Hooks in React.
+
+<!-- Don’t call Hooks inside loops, conditions, or nested functions. Instead, always use Hooks at the top level of your React function, before any early returns. You can only call Hooks while React is rendering a function component:
+
+✅ Call them at the top level in the body of a function component.
+✅ Call them at the top level in the body of a custom Hook.
+🔴 Do not call Hooks inside conditions or loops.
+🔴 Do not call Hooks after a conditional return statement.
+🔴 Do not call Hooks in event handlers.
+🔴 Do not call Hooks in class components.
+🔴 Do not call Hooks inside functions passed to useMemo, useReducer, or useEffect. -->

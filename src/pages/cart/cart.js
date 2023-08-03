@@ -20,6 +20,11 @@ export const Cart = () => {
         {PRODUCTS.map((product) => {
           if (cartItems[product.id] !== 0) {
             return <CartItem data={product} />;
+          } else{
+            return "";
+            //added this else statement with the return due to a warning I found**********
+            //in the terminal that Array.prototype.map() expects a  value to be
+            //returned at the end of an arrow function************************
           }
         })}
       </div>
@@ -46,3 +51,4 @@ export const Cart = () => {
     </div>
   );
 };
+
